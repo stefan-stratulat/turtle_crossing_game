@@ -11,6 +11,7 @@ screen.tracer(0)
 
 player = Player()
 car_manager = CarManager()
+scoreboard = Scoreboard()
 
 screen.listen()
 screen.onkey(player.move,'Up')
@@ -23,7 +24,11 @@ while game_is_on:
     car_manager.move_car()
 
     #player reached finish line
-    player.reset_position()
+    if player.ycor() == 280:
+        player.reset_position()
+        scoreboard.increase_level()
+    #collision with car
+    if player.distance()
 
 
 screen.exitonclick()
