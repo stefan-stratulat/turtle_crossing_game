@@ -27,6 +27,7 @@ while game_is_on:
     if player.ycor() == 280:
         player.reset_position()
         scoreboard.increase_level()
+        car_manager.increase_car_speed()
     #collision with car
     for car in car_manager.cars:
         if car.distance(player) < 15:
