@@ -29,7 +29,7 @@ while game_is_on:
         scoreboard.increase_level()
     #collision with car
     for car in car_manager.cars:
-        if player.distance(car) < 10:
+        if car.distance(player) < 15:
             game_is_on = False
             scoreboard.game_over()
 
