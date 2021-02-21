@@ -19,5 +19,8 @@ while game_is_on:
     time.sleep(0.1)
     screen.update()
 
+    #player reached finish line
+    player.reset_position()
+
 
 screen.exitonclick()
