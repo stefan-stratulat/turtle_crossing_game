@@ -23,8 +23,8 @@ class Scoreboard(Turtle):
         self.color('black')
         self.hideturtle()
         self.penup()
-        self.goto(-40,0)
-        self.write('GAME OVER.', font=FONT)
+        self.goto(-100,0)
+        self.write('GAME OVER', font=FONT)
 
 
 
