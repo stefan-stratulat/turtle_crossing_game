@@ -20,7 +20,7 @@ class CarManager():
         new_car.setheading(180)
         new_car.hideturtle()
         new_car.x_cor = 280
-        new_car.y_cor = random.randint(-260,280)
+        new_car.y_cor = random.randint(-240,280)
         new_car.goto(new_car.x_cor,new_car.y_cor)
         self.cars.append(new_car)
 
