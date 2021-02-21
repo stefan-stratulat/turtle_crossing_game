@@ -28,7 +28,10 @@ while game_is_on:
         player.reset_position()
         scoreboard.increase_level()
     #collision with car
-    if player.distance()
+    for car in car_manager.cars:
+        if player.distance(car) < 10:
+            game_is_on = False
+            scoreboard.game_over()
 
 
 screen.exitonclick()
