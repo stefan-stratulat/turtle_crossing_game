@@ -14,5 +14,10 @@ class Player(Turtle):
         self.goto(STARTING_POSITION)
         self.setheading(90)
 
+    #player will move when key press
     def move(self):
         self.forward(MOVE_DISTANCE)
+
+    def reset_position(self):
+        if self.ycor() == FINISH_LINE_Y:
+            self.goto(STARTING_POSITION)
